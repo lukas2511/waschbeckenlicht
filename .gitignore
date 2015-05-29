@@ -1,0 +1,9 @@
+*.elf
+*.bin
+*.map
+*.hex
+*.images
+*.list
+*.srec
+*.o
+*.d

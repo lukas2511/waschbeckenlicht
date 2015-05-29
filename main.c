@@ -1,9 +1,6 @@
 #include <libopencm3/stm32/rcc.h>
-#include <libopencm3/stm32/rtc.h>
 #include <libopencm3/stm32/gpio.h>
-#include <libopencm3/stm32/timer.h>
 #include <libopencm3/cm3/nvic.h>
-#include <libopencm3/stm32/exti.h>
 #include <libopencm3/cm3/systick.h>
 #include <libopencm3/stm32/iwdg.h>
 
@@ -68,7 +65,6 @@ int main(void) {
 
 	lighttime = LIGHT_TIME * 1000000;
 
-	gpio_set(GPIOA, GPIO8); // disable trigger
 	delay_ms(50);
 
 	while(1) {
